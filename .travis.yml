@@ -16,6 +16,7 @@ node_js:
 
 script:
   - npm run test:prod && npm run build
+  - sonar-scanner
 
 after_success:
   - npm run travis-deploy-once "npm run report-coverage"
@@ -25,3 +26,7 @@ after_success:
 branches:
   except:
     - /^v\d+\.\d+\.\d+$/
+
+addons:
+  sonarcloud:
+    organization: 'eldynn-github'
