@@ -16,12 +16,12 @@ node_js:
 
 script:
   - npm run test:prod && npm run build
-  - sonar-scanner
 
 after_success:
   - npm run travis-deploy-once "npm run report-coverage"
   - if [ "$TRAVIS_BRANCH" = "master" -a "$TRAVIS_PULL_REQUEST" = "false" ]; then npm run travis-deploy-once "npm run deploy-docs"; fi
   - if [ "$TRAVIS_BRANCH" = "master" -a "$TRAVIS_PULL_REQUEST" = "false" ]; then npm run travis-deploy-once "npm run semantic-release"; fi
+  - sonar-scanner "-Dsonar.projectVersion=$(git describe --tags)+build.$TRAVIS_BUILD_NUMBER"
 
 branches:
   except:

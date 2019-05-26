@@ -7,6 +7,7 @@
 [![Version](https://img.shields.io/npm/v/jellax.svg)](https://www.npmjs.com/package/jellax)
 [![Build Status](https://travis-ci.org/Eldynn/jellax.svg?branch=master)](https://travis-ci.org/Eldynn/jellax)
 [![Coverage Status](https://coveralls.io/repos/github/Eldynn/jellax/badge.svg?branch=master)](https://coveralls.io/github/Eldynn/jellax?branch=master)
+[![Sonar Quality Gate](https://img.shields.io/sonar/https/sonarcloud.io/Eldynn_jellax/quality_gate.svg)](https://sonarcloud.io/dashboard?id=Eldynn_jellax)
 
 [![devDependencies](https://david-dm.org/Eldynn/jellax/dev-status.svg)](https://david-dm.org/Eldynn/jellax?type=dev)
 [![Greenkeeper](https://badges.greenkeeper.io/Eldynn/jellax.svg)](https://greenkeeper.io/)
